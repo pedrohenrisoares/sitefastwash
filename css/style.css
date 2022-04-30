@@ -1,175 +1,1064 @@
-body{
-    height: 1920px;
-}
-.site{
-    width: 100%; /*largura*/
-    max-width: 1200px; /*largura maxima*/;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+
+
+
+
+.site {
+    width: 100%;
+    /*largura*/
+    max-width: 1200px;
+    /*largura maxima*/
+    ;
 }
 
-.topo{
-    display: flex; /*colocar itens um ao lado do outro*/
-  justify-content: space-between;/*coloca os item um em cada ponta*/
+.topo {
+    display: flex;
+    /*colocar itens um ao lado do outro*/
+    justify-content: space-between;
+    /*coloca os item um em cada ponta*/
     align-items: center;
 }
-.topo ul{
+
+.topo ul {
     display: flex;
     justify-content: space-between;
 }
-.topo UL LI {
-margin: 15px;
-}
-.menu{
+
+.menu {
+    width: 100%;
     height: 110px;
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.404);
+    box-sizing: initial;
+    justify-content: center;
+
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu img {
+    width: 100px;
     display: flex;
-    justify-content: space-around;
-    background: white;
-    align-items: center;
+   justify-content: center;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+    position: relative;
+    right: -30%;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #008cff;
+    margin: 8px;
+
+}
+
+.botoes {
+    margin-right: 50px;
+
+}
+
+.botoes li {
+    list-style: none;
     color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20pt;
+    margin: 0 10px 0 10px;
+    width: auto;
+
+
 }
-.MENU h1{
-    text-align: center;
-    margin: 10px;
+
+.aa {
+    border-bottom: 2px solid #008BFF;
+    border-radius: 12px;
+
 }
-.menu ul{
+
+.botao2 {
+    border-bottom: 2px solid #008BFF;
+    border-radius: 4px;
+
+}
+
+.redes {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
-.menu .menus li {
-    font-family: 'Bebas Neue', cursive;
-    margin: 25px;
-    margin-right: 0px;
+
+.redes a {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-right: 40px;
+    justify-content: center;
 }
-.menu .redes{
-    margin-right: 50px;
-}
-.banner{
-    background: no-repeat center url(/assents/MicrosoftTeams-image\ \(1\).png);
-    height: 650px ;
+
+/* PAGINA HOME*/
+.banner {
+    background: no-repeat center url(/assents/banner1.png);
+    height: 650px;
     min-width: 100%;
     justify-content: center;
     display: flex;
     position: relative;
     box-shadow: inset 0 0 5em black;
     background-size: cover;
-    
+
 
 }
-.conteudoservico{
+
+.conteudoservico {
     width: 100%;
     max-width: 1100px;
     position: absolute;
     display: flex;
-justify-content: center;
-bottom: -20%;
-box-shadow: 10px 5px 5px black;
+    justify-content: center;
+    bottom: -20%;
+    box-shadow: 10px 5px 5px black;
 
 }
-.servicos{
+
+.servicos {
     display: flex;
     justify-content: space-between;
     position: relative;
     bottom: 0px;
-  min-width: 80%;
-    min-height: 200px;
+    min-width: 100%;
+    max-height: 300px;
+}
+
+.servicos p {
+    margin-left: 10px;
+}
+
+.servicos img {
+    margin-left: 10px;
+}
+
+.servicos h2 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 15pt;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 
-.servico1{
+.servico1 {
     height: auto;
     min-width: 25%;
-    text-align: center;
-    color: white;
-    background-color: #008BFF;
+    text-align: start;
+    color: black;
+    background-color: #F4F4F4;
     padding: 5px;
     margin: 0%;
     flex-direction: column;
-}
-.servico2{
-    min-width: 25%;
-    height: auto;
-    text-align: center;
-    color: black;
-    background-color: #007DE5;
-    padding: 5px;
-    flex-direction: column;
-}
-.servico3{
-    min-width: 25%;
-    height: auto;
-    text-align: center;
-    color: black;
-    background-color: #008BFF;
-    padding: 5px;
-}
-.sobreLava{
-margin-top: 250px;
-display: flex;
-justify-content: center;
-align-content: center;
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-height: auto;
+    border-radius: 10px 0;
 }
 
-.text{
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-    padding: 5px;
-    margin: 10px;
-}
-.text  p{
-  margin: 15px;
-}
-.text h2{
-    margin: 15px;
+.servico2 {
+    min-width: 25%;
+    height: auto;
     text-align: start;
-    letter-spacing: 5px;
-    font-size: 30px;
-}
-.images {
-    text-align: center;
-    width: 50%;
+    color: black;
+    background-color: #EEEEEE;
     padding: 5px;
-  
-    margin: 10px;
-  
+    flex-direction: column;
 }
-.images h3{
-    margin: 15px;
-    font-size: 20px;
+
+.servico3 {
+    min-width: 25%;
+    height: auto;
+    text-align: start;
+    color: black;
+    background-color: #F4F4F4;
+    padding: 5px;
+    border-radius: 0 10px;
 }
-image p{
-    margin: 15px;
+
+.sobreLava {
+    margin-top: 250px;
+    align-content: center;
+    max-width: 1299px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
 }
-.galeria-home{
-margin-top: 150px;
+
+.tituloservico {
+    font-size: 30pt;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.sobreLava h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+
+}
+
+.sobreLava .conteudolava {
+    width: auto;
+    height: AUTO;
+    display: flex;
+}
+
+.sobreLava .sobrelava1 {
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    width: 307px;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+.sobreLava .sobrelava1 img {
     height: 300px;
-color: black;
-display: flex;
-justify-content: center;
-align-content: center;
+    width: 280px;
+    background-color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
-.roleta{
-    height: 100%;
-    border: 1px solid white;
+
+.sobreLava .sobrelava1 p {
+    font-size: 16PT;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+}
+
+.sobreLava .sobrelava1 h3 {
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sobreLava .conteudolava .buttonservico {
+    background-image: linear-gradient(to right, #2d85bb 0%, #2b92f8 51%, #0081fa 100%)
+}
+
+.sobreLava .conteudolava .buttonservico {
+    margin: 60px 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    height: 26px;
+    width: 106px;
+    color: white;
+    border-radius: 12px;
     display: block;
+}
+#buttonlojas{
+        display: flex;
+        justify-content: flex-end;
+    
+}
+
+.sobreLava .conteudolava .buttonservico hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/*conteudodois*/
+.sobreLava .sobrelava2 {
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+.sobreLava .sobrelava2 img {
+    height: 300px;
+    width: 280px;
+    background-color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.sobreLava .sobrelava2 p {
+    font-size: 16PT;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+}
+
+.sobreLava .sobrelava2 h3 {
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*FIM conteudodois*/
+/*CONTEUDOTRES*/
+.sobreLava .sobrelava3 {
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    width: 280px;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+.sobreLava .sobrelava3 img {
+    height: 300px;
+    width: 280px;
+    background-color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.sobreLava .sobrelava3 p {
+    font-size: 16PT;
+    margin-top: 2px;
+    text-align: justify;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+}
+
+.sobreLava .sobrelava3 h3 {
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*FIMCONTEUDOTRES*/
+.sobreLava .sobrelava4 {
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    width: 307px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.sobreLava .sobrelava4 img {
+    height: 300px;
+    width: 280px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.sobreLava .sobrelava4 p {
+    font-size: 16PT;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+}
+
+.sobreLava .sobrelava4 h3 {
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.galeria-home {
+    margin-top: 150px;
+    height: 400px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roletahome {
+    height: 400px;
+    border: 1px;
+    display: flex;
     justify-content: center;
     color: white;
     align-items: center;
-    width: 500px;
+    width: 800px;
+    background-color: black;
 }
-.roleta img{
+
+.roletahome img {
+    background: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.banner2 {
+    margin-top: 100px;
+    height: 200px;
+    min-width: 100%;
+    background: no-repeat center url(/assents/banner2.png);
+    background-size: cover;
+}
+
+
+/* FIM PAGINA HOME*/
+/* RODAPE*/
+.rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #008cff;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.conteudorodape {
+    width: 1200px;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rodaconteudo1 {
+    width: 30%;
+    align-self: center;
+}
+
+.rodaconteudo1 img {
+    padding: 4px;
+    margin-left: 40px;
+    width: 80px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.rodaconteudo1 h3 {
+    margin: 10px 40px 10px 40px;
+    padding: 4px;
+
+}
+
+.rodaconteudo1 ul {
+    display: inline-flex;
+    margin: 10px 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.rodaconteudo1 ul li {
+    padding: 4px;
+}
+
+.rodaconteudo1 hr {
+    height: 20px;
+    margin: 0;
+}
+
+.rodaconteudo2 {
+    width: 30%;
+    align-self: center;
+    padding-right: 15px;
+}
+
+.rodaconteudo2 div {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.rodape2 {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.rodape2 p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.rodape3 {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.rodape3 img {
+    margin-left: 15px;
+}
+
+.rodape3 p {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: start;
+    align-content: center;
+}
+
+.rodape4 {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.rodape4 p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.rodaconteudo3 {
+    width: 30%;
+    align-self: center;
+}
+
+.rodaconteudo3 ul {
+    display: flex;
+    padding: 4px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rodaconteudo3 h4 {
+    font-weight: bold;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+
+}
+
+.rodaconteudo3 p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#lojas{
+    max-width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#lojas p{
+    text-align: center;
+}
+#lojas h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 10px 0;
+    font-family: 'Agency FB Bold', arial;
+}
+
+/* FIM RODAPE*/
+/* PAGINA SERVICO*/
+.bannerservico {
+    background: no-repeat center url(../assents/bannerservico.png);
+    height: 225px;
+    min-width: 100%;
+    justify-content: center;
+    display: flex;
+    box-shadow: inset 0 0 5em black;
+    color: white;
+    font-size: 35pt;
+    font-family: 'Bitter', serif;
+    background-size: cover;
+    align-items: center;
+
+
+}
+
+.bannerservico h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria-servicos {
+    margin: 50px 0 50px 0;
+    height: 400px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roleta {
+    height: 100%;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.roleta img {
     background: black;
     min-width: 100%;
-    min-height: 100%;
+    height: 100%;
+    border-radius: 4px;
 }
-.banner2{
-    margin-top: 100px;
-    background-color: green;
-    height: 300px ;
-    min-width: 100%;
-    background-size: cover;
+
+.resumo-servicos {
+    width: 100%;
+    max-width: 1200px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.resumo-titulo h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.resumo-titulo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+
+}
+
+.resumo-servicos h3 {
+    color: black;
+}
+
+.resumo-conteudo {
+    display: flex;
+    height: 148px;
+    width: 100%;
+    padding-top: 20px
+}
+
+.resumo-servicos1 {
+    width: 35%;
+    height: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-texto {
+    flex-direction: column;
+    text-align: justify;
+}
+
+.resumo-texto p {
+    font-size: 13pt;
+    line-height: 1.6;
+    color: black;
+    padding-top: 10px;
+
+}
+
+.resumo-servicos2 {
+    width: 30%;
+    height: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-texto {
+    flex-direction: column;
+}
+
+.resumo-servicos3 {
+    width: 35%;
+    height: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-icon {
+    width: 40px;
+    height: 40px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/* Tabela de preços */
+.tabela-preços {
+    max-width: 1200px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabela-preços h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.valores {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.valores h3 {
+    font-size: 24pt
+}
+
+.valores h4 {
+    font-size: 14px;
+}
+
+.valores strong {
+    font-size: 60px;
+}
+
+.valores span {
+    font-size: 14px;
+}
+
+.valor1 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e946;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+.valor2 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #00a6ffdc;
+    border-radius: 4px;
+    border: 0.2px solid black;
+    justify-content: space-around;
+}
+
+.valor3 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #2579f7;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+    color: white;
+}
+
+.valor4 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #2579f7;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+
+.valores2 {
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.valor5 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #2579f7;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+
+.valor6 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #2579f7;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+
+.valor7 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #2579f7;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+
+.valor8 {
+    width: 285px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #2579f7;
+    border-radius: 4px;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+.menu-teste button{
+    background-color: transparent;
+    border: none;
+    display: none;
+    font-size: 50pt;
+    color: #0081fa;
+    cursor: pointer;
+}
+
+/* fim tabela de preços */
+/* FIM PAGINA SERVICO*/
+@media(max-width: 600px) {
+    .menu button{
+        display: flex;
+
+    }
+.menu-teste img{
+    padding: 0;
+}
+    .menu{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .topo{
+        height: auto;
+        display: flex;
+      
+     
+    }
+    .botoes {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .menu .redes {
+        display: none;
+    }
+    .banner {
+        height: 500px;
+        position: relative;
+
+    }
+
+    .conteudoservico .servicos {
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: -200px;
+
+
+    }
+
+    .sobreLava {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 500px;
+        height: auto;
+    }
+
+    .conteudolava {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria-home {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+
+    }
+
+    .banner2 {
+        height: 200px;
+        min-width: 100%;
+    }
+
+    .lava {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        text-align: center;
+
+    }
+
+    .conheca-lavas {
+        width: 100%;
+        flex-direction: column;
+        min-height: 80%;
+        align-items: center;
+
+    }
+
+    .lavas {
+        margin-top: 10px;
+        width: 100%;
+
+
+    }
+
+    .rodape {
+        margin-top: auto;
+        width: 100%;
+        height: 800px;
+        flex-wrap: wrap;
+    }
+
+    .conteudorodape {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .rodaconteudo1 {
+        width: 30%;
+        height: auto;
+    }
+
+    .rodaconteudo1 img {
+        padding: 4px;
+        margin-left: 40px;
+        width: 80px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .rodaconteudo1 h3 {
+        margin: 10px 40px 10px 40px;
+        padding: 4px;
+
+    }
+
+    .rodaconteudo1 ul {
+        flex-direction: column;
+        margin: 20px 30px;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .rodaconteudo1 ul li {
+        padding: 4px;
+    }
+
+    .rodaconteudo1 hr {
+        width: 100px;
+        height: auto;
+        margin: 0;
+    }
+
+    .rodaconteudo2 {
+        width: 30%;
+        height: auto;
+    }
+
+    .rodape2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape2 img {
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+    }
+
+    .rodape3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape3 p {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .rodape3 img {
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+    }
+
+    .rodape4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape4 img {
+        width: 40px;
+        height: 30px;
+    }
+
+    .rodaconteudo3 {
+        margin-top: 20px;
+    }
 
 }
