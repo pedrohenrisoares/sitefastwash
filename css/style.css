@@ -4,9 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
 
-
-
-
 .site {
     width: 100%;
     /*largura*/
@@ -863,6 +860,7 @@
 body {
     overflow-x: hidden;
     overflow: hidden;
+    height: 100000px;
 }
 .menu-teste button{
     background-color: transparent;
@@ -875,6 +873,42 @@ body {
 
 /* fim tabela de preços */
 /* FIM PAGINA SERVICO*/
+/* INICIO SOBRE */
+/* FIM SOBRE */
+/* contato */
+#formulario{
+    display: flex;
+}
+#nome{
+    width: 40%;
+}
+#email{
+    width: 60%;
+}
+#mensagem{
+    height: 400px;
+    text-align: start;
+}
+#informacoes1{
+    display: flex;
+}
+#informacoes1 p{
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+#iconelocalizacao{
+color: green;
+}
+#informacoes2{
+    display: flex;
+    margin-top: 10px;
+}
+#informacoes2 p{
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+/* CONTATO */
 @media(max-width: 600px) {
     .menu button{
         display: flex;
