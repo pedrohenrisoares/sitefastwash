@@ -20,9 +20,14 @@
     align-items: center;
 }
 
-.topo ul {
+.topo .botoes{
     display: flex;
     justify-content: space-between;
+}
+
+#logo{
+    margin-left: 15px;
+    width: 100px;
 }
 
 .menu {
@@ -32,7 +37,6 @@
     background-color: rgba(255, 255, 255, 0.404);
     box-sizing: initial;
     justify-content: center;
-
 }
 
 .menu a {
@@ -59,48 +63,59 @@
     margin: 8px;
 
 }
-
-.botoes {
-    margin-right: 50px;
-
+.botoes a{
+    min-width: auto;
 }
 
 .botoes li {
     list-style: none;
-    color: black;
     font-family: 'Bebas Neue', cursive;
     font-size: 20pt;
-    margin: 0 10px 0 10px;
-    width: auto;
-
-
-}
-
-.aa {
-    border-bottom: 2px solid #008BFF;
-    border-radius: 12px;
-
-}
-
-.botao2 {
-    border-bottom: 2px solid #008BFF;
-    border-radius: 4px;
-
-}
-
-.redes {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-}
-
-.redes a {
-    display: flex;
-    height: 40px;
-    width: 40px;
-    margin-right: 40px;
     justify-content: center;
+    align-items: center;
+    margin: 0 22.5px;
+    min-height: 45px;
+}
+
+
+.botaoInativo{
+    color: black;
+}
+.botaoInativo:hover{
+    color: #0c6cb9;
+}
+.botaoInativo:active{
+    color: #008BFF;
+}
+.botaoAtivo{
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-image: linear-gradient(#4187ED, #17B7FA);
+    border: solid 1px #008BFF;
+    color: white;
+    min-width: 88px;
+    min-height: 43px;
+}
+.botaoAtivo:hover{
+    background: #0c6cb9;
+}
+.botaoAtivo:active{
+    background: #008BFF;
+}
+.redes{
+    display: flex;
+    justify-content: flex-end;
+}
+.redes img{
+    max-height: 40px;
+    max-width: 40px;
+    margin: 0 15px;
+}
+.redes a{
+    width: 100%;
+    height: 100%;
 }
 
 /* PAGINA HOME*/
@@ -113,8 +128,6 @@
     position: relative;
     box-shadow: inset 0 0 5em black;
     background-size: cover;
-
-
 }
 
 .conteudoservico {
@@ -125,7 +138,6 @@
     justify-content: center;
     bottom: -20%;
     box-shadow: 10px 5px 5px black;
-
 }
 
 .servicos {
@@ -857,11 +869,11 @@
 
 }
 
-body {
+/* body {
     overflow-x: hidden;
     overflow: hidden;
     height: 100000px;
-}
+} */
 .menu-teste button{
     background-color: transparent;
     border: none;
@@ -1095,4 +1107,173 @@ color: green;
         margin-top: 20px;
     }
 
+}
+
+/* 
+*
+*
+*
+*
+página sobre
+*
+*
+*
+*
+*/
+
+
+/* ==================================================================== Parte do Banner Sobre*/
+.bannerSecundario{
+    background: no-repeat center url(../assents/bannerservico.png);
+    background-size: cover;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 5em black;
+    align-items: center;
+    color: white;
+}
+.bannerSobre{
+    height: 225px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    font-family: 'Bitter', serif;
+    align-items: center;
+}
+.bannerConteudo{
+    display: flex;
+    justify-content: end;
+    font-size: 0.7em;
+}
+.bannerConteudo ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+.bannerConteudo .bannerPaginaAtual::before{
+    content: "/";
+    color: rgb(209, 209, 209);
+    padding: 0 15px;
+    font-size: 0.7em;
+}
+#bannerHome{
+    color: #00EAFF;
+}
+#bannerHome:hover{
+    color: #0c6cb9;
+}
+#bannerHome:active{
+    color: #008BFF;
+}
+/* ==================================================================== Fim da Parte do Banner Sobre*/
+
+
+/* ==================================================================== Parte 1 (Um) da Página Sobre*/
+.conteudoSobreUm{
+    display: flex;
+    justify-content: center;
+    min-width: 1200px;
+    margin: 50px 0;
+}
+.conteudoSobreUmEsquerda{
+    min-height: 442px;
+    min-width: 562px;
+    background-image: linear-gradient(#006999,#008CFF);
+    border-radius: 20px;
+    margin-right: 75px;
+}
+.conteudoSobreUmDireita{
+    min-height: 442px;
+    max-width: 563px;
+}
+.conteudoSobreUmDireita h2{
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 0 26px 0;
+}
+.conteudoSobreUmDireita p{
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.06em;
+    width: 100%;
+    color: black;
+}
+.conteudoSobreUmDireita p::before{
+    content: "     ";
+    white-space: pre;
+}
+/* ==================================================================== Fim da Parte 1 (Um) da Página Sobre*/
+
+/* ==================================================================== Parte 2 (Dois) da Página Sobre*/
+/*conteudoSobreDois
+conteudoSobreDoisMissao
+conteudoSobreDoisVisao
+conteudoSobreDoisValores*/
+.conteudoSobreDois{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+}
+.conteudoSobreDois h2{
+    font-family: 'Calibri';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+letter-spacing: 0.06em;
+max-width: 350px;
+}
+.conteudoSobreDois p{
+font-family: 'Calibri';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 32px;
+text-align: justify;
+letter-spacing: 0.06em;
+max-width: 350px;
+}
+.conteudoSobreDoisVisao{
+    margin: 0 75px;
+}
+/* ==================================================================== Fim da Parte 2 (Dois) da Página Sobre*/
+
+/* ==================================================================== Parte 3 (Três) da Página Sobre*/
+
+
+
+
+
+/* ========================================
+========================================
+
+SCROLLBAR -- FASE DE TESTE
+
+========================================
+======================================== */
+
+                            /* width */
+::-webkit-scrollbar{
+    width: 10px;
+  }
+                            /* Track */
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+  }
+                            /* Handle */
+::-webkit-scrollbar-thumb{
+    background: rgb(36, 36, 36);
+}
+                            /* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #007BCC;
 }
