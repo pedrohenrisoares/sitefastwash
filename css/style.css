@@ -1344,20 +1344,33 @@ SCROLLBAR -- FASE DE TESTE
     .conteudoSobreUm {
         display: flex;
         flex-direction: column;
-        max-width: none;
-        flex-wrap: wrap;
+        margin: 10px;
+        min-width: auto;
     }
 
     .conteudoSobreUmEsquerda {
-        max-width: 600px;
+        max-width: auto;
+        margin: 0;
+        min-width: auto;
     }
 
     .conteudoSobreUmDireita {
-        max-width: 600px;
+        max-width: auto;
+        min-width: auto;
+        margin: 10px 10px;
+    }
+    .conteudoSobreUmDireita p, .conteudoSobreUmDireita h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
         margin: 0;
     }
+    .conteudoSobreUmDireita p::before {
+        display: none;
+    }
     .conteudoSobreDois{
-        max-width: 600px;
+        max-width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1424,3 +1437,74 @@ SCROLLBAR -- FASE DE TESTE
 .conteudoSobreDoisVisao {
     margin: 0 75px;
 } */
+
+
+/* ====================================================================
+====================================================================
+                      C   O   N   T   A   T   O
+====================================================================
+==================================================================== */
+
+#conteudoContato{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#formulario{
+    display: flex;
+   
+}
+#nome{
+    width: 40%;
+    margin-right: 9px;
+    border-radius: 5px;
+    border: solid 2px #7E7E7E;
+}
+#email{
+    width: 60%;
+    border-radius: 5px;
+    border: solid 2px #7E7E7E;
+}
+#assunto{
+    border-radius: 5px;
+    margin: 10px 0 15px 0 ;
+    border: solid 2px #7E7E7E;
+}
+#mensagem{
+    height: 150px;
+    width: 547px;
+    text-align: start;
+    border: solid 2px #7E7E7E;
+}
+#informacoes1{
+    display: flex;
+}
+#informacoes1 p{
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+#iconelocalizacao{
+color: #4187ED;
+}
+#informacoes2{
+    display: flex;
+    margin-top: 20px;
+}
+#informacoes2 p{
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+#localizacao img{
+    width: 547px;
+    border-radius: 5px;
+    height: 376px;
+}
+#tituloLocalizacao{
+    font-weight: bold;
+    font-size:22.61px;
+    margin-top: 34px;
+}
+#tituloInformacao{
+    font-weight: bold;
+    font-size:22.61px
+}
+/* contato */
