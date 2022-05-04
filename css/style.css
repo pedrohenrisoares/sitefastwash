@@ -900,6 +900,30 @@
 /* INICIO SOBRE */
 /* FIM SOBRE */
 /* contato */
+#botaoformulario{
+    display: flex;
+    justify-content: flex-end;
+}
+#botaoenviar {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-image: linear-gradient(#4187ED, #17B7FA);
+    border: solid 1px #008BFF;
+    color: white;
+    min-width: 88px;
+    min-height: 43px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+#botaoenviar:hover {
+    background: #0c6cb9;
+}
+
+#botaoenviar:active {
+    background: #008BFF;
+}
 #formulario {
     display: flex;
 }
