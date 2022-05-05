@@ -128,7 +128,7 @@
 
 /* PAGINA HOME*/
 .banner {
-    background: no-repeat center url(/assents/banner1.png);
+    background: no-repeat center url(/assets/banner1.png);
     height: 650px;
     min-width: 100%;
     justify-content: center;
@@ -442,7 +442,7 @@
     margin-top: 100px;
     height: 200px;
     min-width: 100%;
-    background: no-repeat center url(/assents/banner2.png);
+    background: no-repeat center url(/assets/banner2.png);
     background-size: cover;
 }
 
@@ -601,7 +601,7 @@
 /* FIM RODAPE*/
 /* PAGINA SERVICO*/
 .bannerservico {
-    background: no-repeat center url(../assents/bannerservico.png);
+    background: no-repeat center url(../assets/bannerservico.png);
     height: 225px;
     min-width: 100%;
     justify-content: center;
@@ -897,78 +897,6 @@
 
 /* fim tabela de preços */
 /* FIM PAGINA SERVICO*/
-/* INICIO SOBRE */
-/* FIM SOBRE */
-/* contato */
-#botaoformulario{
-    display: flex;
-    justify-content: flex-end;
-}
-#botaoenviar {
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    background-image: linear-gradient(#4187ED, #17B7FA);
-    border: solid 1px #008BFF;
-    color: white;
-    min-width: 88px;
-    min-height: 43px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
-}
-
-#botaoenviar:hover {
-    background: #0c6cb9;
-}
-
-#botaoenviar:active {
-    background: #008BFF;
-}
-#formulario {
-    display: flex;
-}
-
-#nome {
-    width: 40%;
-}
-
-#email {
-    width: 60%;
-}
-
-#mensagem {
-    height: 400px;
-    text-align: start;
-}
-
-#informacoes1 {
-    display: flex;
-}
-
-#informacoes1 p {
-    margin-left: 20px;
-    font-size: 0.9rem;
-}
-
-#iconelocalizacao {
-    color: green;
-}
-
-#informacoes2 {
-    display: flex;
-    margin-top: 10px;
-}
-
-#informacoes2 p {
-    margin-left: 20px;
-    font-size: 0.9rem;
-}
-
-/* CONTATO */
-
-
-
-
 
 
 /* 
@@ -985,7 +913,7 @@ página sobre
 
 /* ==================================================================== Parte do Banner Sobre*/
 .bannerSecundario {
-    background: no-repeat center url(../assents/bannerservico.png);
+    background: no-repeat center url(../assets/bannerservico.png);
     background-size: cover;
     height: 225px;
     display: flex;
@@ -1212,8 +1140,6 @@ SCROLLBAR -- FASE DE TESTE
         flex-wrap: wrap;
         position: absolute;
         bottom: -200px;
-
-
     }
 
     .sobreLava {
@@ -1361,10 +1287,64 @@ SCROLLBAR -- FASE DE TESTE
     /* ========================================
         PAGINA SOBRE
 ======================================== */
-    .bannerSecundario {
-        display: none;
+/* .bannerSecundario {
+    background: no-repeat center url(../assets/bannerservico.png);
+    background-size: cover;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 5em black;
+    align-items: center;
+    color: white;
+}
+
+.bannerSobre {
+    height: 225px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    font-family: 'Bitter', serif;
+    align-items: center;
+} */
+
+
+    .bannerSecundario{
+        display: flex;
+        justify-content: center;
     }
 
+    .bannerSobre{
+        display: flex;
+        justify-content: center;
+        min-width: auto;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: inset 0 0 5em black;
+
+    }
+    .bannerSobre h2{
+        font-size: 100%;
+        font-weight: 400;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        min-width: auto;
+        max-width: 600px;
+        font-size: 35pt;
+        font-family: 'Bitter', serif;
+    }
+    .bannerConteudo{
+         display: none;
+    }
+
+.bannerConteudo .bannerPaginaAtual::before {
+    display: none;
+}  
+    #bannerHome{
+        display: none;
+    }
     .conteudoSobreUm {
         display: flex;
         flex-direction: column;
@@ -1531,4 +1511,71 @@ color: #4187ED;
     font-weight: bold;
     font-size:22.61px
 }
-/* contato */
+
+
+
+#botaoformulario{
+    display: flex;
+    justify-content: flex-end;
+}
+#botaoenviar {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-image: linear-gradient(#4187ED, #17B7FA);
+    border: solid 1px #008BFF;
+    color: white;
+    min-width: 88px;
+    min-height: 43px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+#botaoenviar:hover {
+    background: #0c6cb9;
+}
+
+#botaoenviar:active {
+    background: #008BFF;
+}
+#formulario {
+    display: flex;
+}
+
+#nome {
+    width: 40%;
+}
+
+#email {
+    width: 60%;
+}
+
+#mensagem {
+    height: 400px;
+    text-align: start;
+}
+
+#informacoes1 {
+    display: flex;
+}
+
+#informacoes1 p {
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+#iconelocalizacao {
+    color: green;
+}
+
+#informacoes2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+#informacoes2 p {
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+/* CONTATO */
