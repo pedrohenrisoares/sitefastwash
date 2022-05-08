@@ -10,7 +10,9 @@
     /*largura maxima*/
     ;
 }
-
+nav button{
+    display: none;
+}
 .topo {
     display: flex;
     /*colocar itens um ao lado do outro*/
