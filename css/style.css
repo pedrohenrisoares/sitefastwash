@@ -760,7 +760,7 @@
 
 .valores h3 {
     font-size: 24pt;
-    
+
 }
 
 .valores h4 {
@@ -774,31 +774,37 @@
 .valores span {
     font-size: 14px;
 }
-.valor1::before, /* Foi colocado uma animação para quando passar o mouse em cima dos preços aparecer */
-.valor1::after{
+
+.valor1::before,
+/* Foi colocado uma animação para quando passar o mouse em cima dos preços aparecer */
+.valor1::after {
     content: "";
-    position:absolute;
+    position: absolute;
     bottom: 0;
     top: 0;
     right: 0;
-    left:0;
+    left: 0;
     transition: transform .3s ease-in-out;
 
 }
-.valor1::before{
+
+.valor1::before {
     border-left: 1px solid black;
     border-right: 1px solid black;
     transform: scaleY(0);
 }
-.valor1::after{
+
+.valor1::after {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     transform: scaleX(0);
 }
-.valor1:hover::before{
+
+.valor1:hover::before {
     transform: scaleY(1);
 }
-.valor1:hover::after{
+
+.valor1:hover::after {
     transform: scaleX(1);
 }
 
@@ -813,8 +819,8 @@
     background: #00baff;
     border-radius: 4px;
     justify-content: space-around;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0,0,0,0.15); 
-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0.15);
 }
 
 .valor2 {
@@ -1127,6 +1133,91 @@ SCROLLBAR -- FASE DE TESTE
 
 
 @media(max-width: 600px) {
+    .topo {
+        height: 70px;
+    }
+
+    /* 
+        MENU    RESPONSIVO
+ */
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 9.5%;
+        right: 0px;
+        background: #e7e7e7;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: 100vh;
+        display: block;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 0, 0, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        color: #007BCC;
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin: 5px 0 0 0;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-thumb:hover {
+        display: none;
+    }
+
+    /* fim do menu responsivo */
+
     body {
         max-width: 600px;
     }
@@ -1144,13 +1235,6 @@ SCROLLBAR -- FASE DE TESTE
         height: auto;
         display: flex;
         justify-content: space-around;
-
-    }
-
-    .topo {
-        height: auto;
-        display: flex;
-
 
     }
 
@@ -1323,7 +1407,7 @@ SCROLLBAR -- FASE DE TESTE
     /* ========================================
         PAGINA SOBRE
 ======================================== */
-/* .bannerSecundario {
+    /* .bannerSecundario {
     background: no-repeat center url(../assets/bannerservico.png);
     background-size: cover;
     height: 225px;
@@ -1346,12 +1430,12 @@ SCROLLBAR -- FASE DE TESTE
 } */
 
 
-    .bannerSecundario{
+    .bannerSecundario {
         display: flex;
         justify-content: center;
     }
 
-    .bannerSobre{
+    .bannerSobre {
         display: flex;
         justify-content: center;
         min-width: auto;
@@ -1360,7 +1444,8 @@ SCROLLBAR -- FASE DE TESTE
         box-shadow: inset 0 0 5em black;
 
     }
-    .bannerSobre h2{
+
+    .bannerSobre h2 {
         font-size: 100%;
         font-weight: 400;
         margin: 0;
@@ -1371,16 +1456,19 @@ SCROLLBAR -- FASE DE TESTE
         font-size: 35pt;
         font-family: 'Bitter', serif;
     }
-    .bannerConteudo{
-         display: none;
-    }
 
-.bannerConteudo .bannerPaginaAtual::before {
-    display: none;
-}  
-    #bannerHome{
+    .bannerConteudo {
         display: none;
     }
+
+    .bannerConteudo .bannerPaginaAtual::before {
+        display: none;
+    }
+
+    #bannerHome {
+        display: none;
+    }
+
     .conteudoSobreUm {
         display: flex;
         flex-direction: column;
@@ -1399,45 +1487,56 @@ SCROLLBAR -- FASE DE TESTE
         min-width: auto;
         margin: 10px 10px;
     }
-    .conteudoSobreUmDireita p, .conteudoSobreUmDireita h2{
+
+    .conteudoSobreUmDireita p,
+    .conteudoSobreUmDireita h2 {
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
         margin: 0;
     }
+
     .conteudoSobreUmDireita p::before {
         display: none;
     }
-    .conteudoSobreDois{
+
+    .conteudoSobreDois {
         max-width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0px;
     }
-    .conteudoSobreDoisMissao p, .conteudoSobreDoisMissao h2{
+
+    .conteudoSobreDoisMissao p,
+    .conteudoSobreDoisMissao h2 {
         margin: 0px 10px;
         display: flex;
         justify-content: center;
         max-width: none;
         text-align: center;
     }
-    .conteudoSobreDoisVisao{
+
+    .conteudoSobreDoisVisao {
         margin: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 600px;
     }
-    .conteudoSobreDoisVisao p, .conteudoSobreDoisVisao h2{
+
+    .conteudoSobreDoisVisao p,
+    .conteudoSobreDoisVisao h2 {
         margin: 0px 10px;
         display: flex;
         justify-content: center;
         max-width: none;
         text-align: center;
     }
-    .conteudoSobreDoisValores p, .conteudoSobreDoisValores h2{
+
+    .conteudoSobreDoisValores p,
+    .conteudoSobreDoisValores h2 {
         margin: 0px 10px;
         display: flex;
         justify-content: center;
@@ -1485,75 +1584,89 @@ SCROLLBAR -- FASE DE TESTE
 ====================================================================
 ==================================================================== */
 
-#conteudoContato{
+#conteudoContato {
     margin-top: 70px;
     margin-bottom: 70px;
 }
-#formulario{
+
+#formulario {
     display: flex;
-   
+
 }
-#nome{
+
+#nome {
     width: 40%;
     margin-right: 9px;
     border-radius: 5px;
     border: solid 2px #7E7E7E;
 }
-#email{
+
+#email {
     width: 60%;
     border-radius: 5px;
     border: solid 2px #7E7E7E;
 }
-#assunto{
+
+#assunto {
     border-radius: 5px;
-    margin: 10px 0 15px 0 ;
+    margin: 10px 0 15px 0;
     border: solid 2px #7E7E7E;
 }
-#mensagem{
+
+#mensagem {
     height: 150px;
     width: 547px;
     text-align: start;
     border: solid 2px #7E7E7E;
 }
-#informacoes1{
+
+#informacoes1 {
     display: flex;
 }
-#informacoes1 p{
+
+#informacoes1 p {
     margin-left: 20px;
     font-size: 0.9rem;
 }
-#iconelocalizacao{
-color: #4187ED;
+
+#iconelocalizacao {
+    color: #4187ED;
 }
-#informacoes2{
+
+#informacoes2 {
     display: flex;
     margin-top: 20px;
 }
-#informacoes2 p{
+
+#informacoes2 p {
     margin-left: 20px;
     font-size: 0.9rem;
 }
-#localizacao img{
+
+#localizacao img {
     width: 547px;
     border-radius: 5px;
     height: 376px;
 }
-#tituloLocalizacao{
+
+#tituloLocalizacao {
     font-weight: bold;
-    font-size:22.61px;
+    font-size: 22.61px;
     margin-top: 34px;
 }
-#tituloInformacao{
+
+#tituloInformacao {
     font-weight: bold;
-    font-size:22.61px
+    font-size: 22.61px
 }
 
 
 
-#botaoformulario{
+#botaoformulario {
     display: flex;
     justify-content: flex-end;
 }
+
 #botaoenviar {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -1574,6 +1687,7 @@ color: #4187ED;
 #botaoenviar:active {
     background: #008BFF;
 }
+
 #formulario {
     display: flex;
 }

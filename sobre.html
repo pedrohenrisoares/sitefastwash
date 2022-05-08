@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" id="html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,9 +26,10 @@
         <section class="menu">
 
             <article class="site topo">
-                <img id="logo" src="/assets/icones/fastwashtudopreto.svg" alt="">
-                    <div>
-                    <ul class="botoes">
+                <img id="logo" src="/assets/icones/fastwashtudopreto.svg" alt="Logo FastWash">
+                <nav id="nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu<span id="hamburguer"></span></button>
+                    <ul id="menu" class="botoes" role="menu">
                         <a href="/index.html">
                             <li class="botaoInativo" id="topoHome">HOME</li>
                         </a>
@@ -42,7 +43,7 @@
                             <li class="botaoInativo" id="topoContato">CONTATO</li>
                         </a>
                     </ul>
-                    </div>
+                </nav>
                 <ul class="redes">
                     <a href="face"><img src="assets/bottom-face.png" alt="face"></a>
                     <a href="bottom-insta"><img src="assets/bottom-insta.png" alt="insta"></a>
@@ -138,4 +139,5 @@
         </section>
     </footer>
 </body>
+<script src="/js/animations.js"></script>
 </html>
