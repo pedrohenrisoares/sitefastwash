@@ -130,12 +130,12 @@ nav button{
 
 /* PAGINA HOME*/
 .banner {
-    background: no-repeat center url(/assets/banner1.png);
+    background: no-repeat center center;
     height: 650px;
     min-width: 100%;
     justify-content: center;
     display: flex;
-    position: relative;
+    
     box-shadow: inset 0 0 5em black;
     background-size: cover;
 }
@@ -143,18 +143,19 @@ nav button{
 .conteudoservico {
     width: 100%;
     max-width: 1100px;
-    position: absolute;
+margin: 0 auto;
     display: flex;
     justify-content: center;
-    bottom: -20%;
+  bottom: 60px;
     box-shadow: 10px 5px 5px black;
+    position: relative;
 }
 
 .servicos {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    top: -15px;
     min-width: 100%;
     max-height: 300px;
 }
