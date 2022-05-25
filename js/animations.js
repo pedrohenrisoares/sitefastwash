@@ -25,17 +25,12 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 $(document).ready(function(){
     $('.banner').slick({
-        draggable: true,
+        prevArrow: '<span class="previous-arrow"><i class="fa-solid fa-arrow-left fa-xl"></i></span>', 
+        nextArrow: '<span class="next-arrow"><i class="fa-solid fa-arrow-right fa-xl"></i></span>',
+        autoplaySpeed: 2000,
         autoplay: true,
-        autoplaySpeed: 7000,
-        arrows: false,
-        dots: true,
-        fade: true,
-        speed: 500,
-        infinite: true,
-        cssEase: 'ease-in-out',
-        touchThreshold: 100,
-      });
+        
+    });
 
 
 });
