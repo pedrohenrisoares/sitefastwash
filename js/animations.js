@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('.galeria-home').slick({
         prevArrow: '<span id="galeria-previous-arrows"><i class="fa-solid fa-arrow-left fa-xl"></i></span>',
         nextArrow: '<span id="galeria-next-arrow"><i class="fa-solid fa-arrow-right fa-xl"></i></span>',
-        autoplaySpeed: 2500,
+        autoplaySpeed: 100000,
         autoplay: true,
     });
 
