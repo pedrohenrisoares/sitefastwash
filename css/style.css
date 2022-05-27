@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 .site {
     width: 100%;
@@ -1151,9 +1153,151 @@ conteudoSobreTresCliente*/
 
 
 
+/* =================================================== PARTE 4 (Quatro) da Página Sobre */
+.conteudoSobreQuatro{
+    margin:100px auto 100px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.conteudoSobreQuatroOpniao {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.conteudoSobreQuatroOpniao div{
+    width: 350px;
+    height: 335px;
+    margin: 0 20px 0 0 ;
+}
+
+#cliente01{
+    flex-direction: column;
+    color: #000000;
+    border-radius: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #C7D7E4;
+    -webkit-box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71); 
+    box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71);
+}
+#cliente01 img{
+    width: 100px;
+    height: 100px;
+    background: #ffff;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 99999999999;
+    top: -30px;
+    margin: 0 0 15px 0 p;
+}
+#cliente01 p{
+    height: 115px;
+    text-align: justify;
+    font-size:1.3376rem;
+    width: 268px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+#cliente01 h2{
+    font-size:1.6720rem;
+    margin: 0 0 20px 0 ;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px
+}
+#cliente02{
+    flex-direction: column;
+    color: #ffff;
+    border-radius: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #4D94FF;
+    -webkit-box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71); 
+    box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71);
+}
+#cliente02 img{
+    width: 100px;
+    height: 100px;
+    background: #ffff;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 99999999999;
+    top: -30px;
+}
+#cliente02 p{
+    height: 115px;
+    text-align: justify;
+    font-size:1.3376rem;
+    width: 268px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+#cliente02 h2{
+    font-size:1.6720rem;
+    margin: 0 0 20px 0 ;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px
+}
+#cliente03{
+    flex-direction: column;
+    color: #000000;
+    border-radius: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #C7D7E4;
+    -webkit-box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71); 
+    box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71);
+}
+#cliente03 img{
+    width: 100px;
+    height: 100px;
+    background: #007BCC;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 99999999999;
+    top: -30px;
+}
+#cliente03 p{
+    height: 115px;
+    text-align: justify;
+    font-size:1.3376rem;
+    width: 268px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+#cliente03 h2{
+    font-size:1.6720rem;
+    margin: 0 0 20px 0 ;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px
+}
+
+
+
+
+
+
+
+/* ===================================================================== Fim da Página  Quatro */
+
 /* ========================================
 ========================================
-
 SCROLLBAR -- FASE DE TESTE
 
 ========================================
