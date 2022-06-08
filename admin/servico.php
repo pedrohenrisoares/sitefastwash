@@ -12,32 +12,10 @@ if(!$conexao){
 $query = $conexao->prepare("SELECT * FROM `servico` WHERE statusServico = 'ATIVO' ORDER BY nomeServico ASC");
 
 $query->execute();
+$json = array(); 
 
-//[{"name":"John"}]
-
-
-$json = "[";
-
-while ($resultado = $query->fetch()) {
-    if($json != "["){
-        $json .= ",";
-    }
-   
-    $json .=  '{"idServico":"'.$resultado["idServico"].'",';   //Primeiro resultado                             //.= é igual a atribuir e contatenar
-        $json .=  '"nomeServico":"'.$resultado["nomeServico"].'",';
-        $json .=  '"valorServico":"'.$resultado["valorServico"].'",';
-        $json .=  '"statusServico":"'.$resultado["statusServico"].'",';
-        $json .=  '"dataCadServico":"'.$resultado["dataCadServico"].'",';
-        $json .=  '"fotoServico1":"'.$resultado["fotoServico1"].'",';
-        $json .=  '"fotoServico2":"'.$resultado["fotoServico2"].'",';
-        $json .=  '"fotoServico3":"'.$resultado["fotoServico3"].'",';
-        $json .=  '"descricaoServico":"'.$resultado["descricaoServico"].'",';
-        $json .=  '"textoServico":"'.$resultado["textoServico"].'",';
-        $json .=  '"tempoExecServico":"'.$resultado["tempoExecServico"].'",';
-    $json .=  '"idEmpresa":"'.$resultado["idEmpresa"].'"}'; // Ultimo resultado
-} // fim laço
-
-
-$json .= "]";
-
-echo $json;
+ while ($resultado =$query->fetch(PDO::FETCH_ASSOC)){
+      array_push($json,$resultado);
+    } 
+echo json_encode($json, JSON_UNESCAPED_UNICODE)
+?>
