@@ -20,12 +20,10 @@ if(isset($_GET['idServico'])) {
 
     $query->execute();
 
-    $json = $query->fetch(PDO::FETCH_ASSOC);
-
-    array_push($json, $dados);
-
-    echo json_encode($json, JSON_UNESCAPED_UNICODE);
+    $dados = $query->fetch(PDO::FETCH_ASSOC);
+    $json = array();
     
+    array_push($json, $dados);
+    echo json_encode($json, JSON_UNESCAPED_UNICODE);
 }
-
 ?>

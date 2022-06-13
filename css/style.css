@@ -418,7 +418,7 @@ box-shadow: 5px 4px 12px -1px #000000;
     padding: 20px;
     width: 307px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
 
 }
@@ -1288,10 +1288,46 @@ conteudoSobreTresCliente*/
     line-height: 30px
 }
 
-
-
-
-
+.conteudoSobreCard{
+    margin: 0 145px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteudoSobreCard h2{
+    font-size:1.6720rem;
+    margin: 0 0 20px 0 ;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px
+}
+.conteudoSobreCard p{
+    height: 115px;
+    text-align: justify;
+    font-size:1.3376rem;
+    width: 268px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+.conteudoSobreCard img{
+    width: 100px;
+    height: 100px;
+    background: #007BCC;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 99999999999;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide{
+    background-color: #006999;
+    flex-direction: column;
+    margin: 100px 0;
+}
 
 
 /* ===================================================================== Fim da Página  Quatro */
