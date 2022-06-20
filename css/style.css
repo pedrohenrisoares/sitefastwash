@@ -1162,7 +1162,7 @@ conteudoSobreTresCliente*/
 .conteudoSobreQuatroOpniao {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
@@ -1289,47 +1289,79 @@ conteudoSobreTresCliente*/
 }
 
 .conteudoSobreCard{
-    margin: 0 145px;
+    position: relative;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 .conteudoSobreCard h2{
     font-size:1.6720rem;
     margin: 0 0 20px 0 ;
     font-family: 'Poppins', sans-serif;
-    line-height: 30px
+    line-height: 30px;
+    text-align: center;
 }
 .conteudoSobreCard p{
     height: 115px;
     text-align: justify;
     font-size:1.3376rem;
-    width: 268px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     font-style: italic;
+    text-align: center;
+    width: 268px;
+
 }
 .conteudoSobreCard img{
+    position: absolute;
     width: 100px;
     height: 100px;
     background: #007BCC;
-    border-radius: 50px;
-    position: absolute;
+    border-radius: 200px;
+    border: 8px solid #FFFFFF;
+    box-sizing: border-box;
     z-index: 99999999999;
     top: -30px;
+}
+.cardBox{
+    flex-direction: column;
+    color: #000000;
+    border-radius: 60px;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71); 
+    box-shadow: 5px 5px 11px -1px rgba(0,0,0,0.71);
+    width: 350px;
+    height: 335px;
+    margin: 30px 22px;
 }
-.swiper-slide{
-    background-color: #006999;
-    flex-direction: column;
-    margin: 100px 0;
+.swiper-slide :nth-child(odd){
+    background-color: #C7D7E4;
 }
-
-
+.swiper-slide :nth-child(even){
+    background: #4D94FF;
+}
+.swiper-pagination{
+    bottom: 5px !important;
+}
 /* ===================================================================== Fim da Página  Quatro */
 
 /* ========================================
