@@ -1353,10 +1353,10 @@ conteudoSobreTresCliente*/
     height: 335px;
     margin: 30px 22px;
 }
-.swiper-slide :nth-child(odd){
+.cardBox :nth-child(odd) >{
     background-color: #C7D7E4;
 }
-.swiper-slide :nth-child(even){
+.cardBox :nth-child(even) >{
     background: #4D94FF;
 }
 .swiper-pagination{
