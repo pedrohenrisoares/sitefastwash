@@ -1149,7 +1149,36 @@ página sobre
 /* ==================================================================== Parte 3 (Três) da Página Sobre*/
 /*conteudoSobreTres
 conteudoSobreTresCliente*/
+.conteudoSobreTres{
+    margin: 0 auto;
+    width: 100%;
+    background: #e9e9e946;
+    height: 400px;
+}
+.conteudoSobreTresCliente{
+    max-width: 1200px;
+    margin: 0 auto;
 
+}
+.conteudoSobreTresCliente h2{
+    text-align: center;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 0 26px 0;
+}
+.conteudoSobreTresCliente p{
+    font-family: 'Calibri';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.06em;
+   
+}
 
 
 
@@ -1172,7 +1201,7 @@ conteudoSobreTresCliente*/
     margin: 0 20px 0 0 ;
 }
 
-#cliente01{
+/* #cliente01{
     flex-direction: column;
     color: #000000;
     border-radius: 60px;
@@ -1286,6 +1315,19 @@ conteudoSobreTresCliente*/
     margin: 0 0 20px 0 ;
     font-family: 'Poppins', sans-serif;
     line-height: 30px
+} */
+.tituloDepoimento{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+.tituloDepoimento h2{
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px
 }
 
 .conteudoSobreCard{
@@ -1671,28 +1713,6 @@ SCROLLBAR -- FASE DE TESTE
     /* ========================================
         PAGINA SOBRE
 ======================================== */
-    /* .bannerSecundario {
-    background: no-repeat center url(../assets/bannerservico.png);
-    background-size: cover;
-    height: 225px;
-    display: flex;
-    justify-content: center;
-    box-shadow: inset 0 0 5em black;
-    align-items: center;
-    color: white;
-}
-
-.bannerSobre {
-    height: 225px;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2em;
-    font-family: 'Bitter', serif;
-    align-items: center;
-} */
-
 
     .bannerSecundario {
         display: flex;
@@ -1967,6 +1987,7 @@ SCROLLBAR -- FASE DE TESTE
 #mensagem {
     height: 400px;
     text-align: start;
+    resize: none;
 }
 
 #informacoes1 {
@@ -1992,4 +2013,47 @@ SCROLLBAR -- FASE DE TESTE
     font-size: 0.9rem;
 }
 
+
+
+
 /* CONTATO */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: -139;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    position: relative;
+    top: 50%;
+    background-color: red;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
