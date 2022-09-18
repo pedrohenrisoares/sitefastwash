@@ -40,21 +40,29 @@ $(document).ready(function(){
     });
 
 
-});
-
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("btnServico02");
+var btn1 = document.getElementById("btnServico01");
+var btn2 = document.getElementById("btnServico02");
+var btn3 = document.getElementById("btnServico03");
+var btn4 = document.getElementById("btnServico04");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-if(btn.clicked == true){
-btn.onclick = function() {
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal.style.display = "block";
+}
+btn3.onclick = function() {
+  modal.style.display = "block";
+}
+btn4.onclick = function() {
   modal.style.display = "block";
 }
 
@@ -69,4 +77,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-}
+});
